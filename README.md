@@ -1,3 +1,7 @@
+# 建立HIVE数据库
+* 浦哥 “/user/pudu/” 这个Hadoop文件夹的权限我们没有，建立不了table
+* Hive_Code.sql
+
 # 计算不同类别的转化率
 * category_rate_map.py
 * category_rate_red.py
