@@ -19,4 +19,5 @@
 * no_hesitate_product_map.py
 * no_hesitate_product_red.py
 
-# TBD
+# 用户单次访问且成功购买，成功购买前浏览几个商品？
+* views_before_purchase.sql
