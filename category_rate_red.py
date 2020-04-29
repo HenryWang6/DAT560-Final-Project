@@ -19,14 +19,14 @@ for line in sys.stdin:
 	if event_type =='cart':
 		try:
 			category_cart[category] += 1
-		except ValueError:
+		except KeyError:
 			category_cart[category] = 1
 		category_ls.append(category)
 
 	if event_type =='purchase':
 		try:
 			category_purchase[category] += 1
-		except ValueError:
+		except KeyError:
 			category_purchase = 1
 		category_ls.append(category)
 
