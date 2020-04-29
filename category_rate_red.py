@@ -27,7 +27,7 @@ for line in sys.stdin:
 		try:
 			category_purchase[category] += 1
 		except KeyError:
-			category_purchase = 1
+			category_purchase[category] = 1
 		category_ls.append(category)
 
 
