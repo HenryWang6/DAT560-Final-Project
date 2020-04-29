@@ -31,6 +31,23 @@ for line in sys.stdin:
 		category_ls.append(category)
 
 
-print 'category,view_to_cart_rate,cart_to_purchase_rate,purchase_rate'
+print 'category,view_to_cart_rate,cart_to_purchase_rate,view_to_purchase_rate'
 for each in category_ls:
-	print '%s,%s,%s,%s' % (each, category_cart[each]*100.0/category_view[each], category_purchase[each]*100.0/category_cart[each], category_purchase[each]*100.0/category_view[each])
+	try:
+		v_to_c = category_cart[each]*100.0/category_view[each]
+	except KeyError:
+		v_to_c = 0.0
+
+	try:
+		c_to_p = category_purchase[each]*100.0/category_cart[each]
+	except KeyError:
+		c_to_p = 0.0
+
+	try:
+		v_to_p = category_purchase[each]*100.0/category_view[each]
+	except KeyError:
+		v_to_p = 0.0
+	
+	print '%s,%s,%s,%s' % (each, v_to_c, c_to_p, v_to_p)
+
+
