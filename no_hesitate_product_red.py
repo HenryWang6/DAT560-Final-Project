@@ -10,7 +10,7 @@ for line in sys.stdin:
 
 	try:
 		id_cnt[product_id] += 1
-	except ValueError:
+	except KeyError:
 		id_cnt[product_id] = 1
 
 print 'product_id,inhesitate_purchase_count,category'
