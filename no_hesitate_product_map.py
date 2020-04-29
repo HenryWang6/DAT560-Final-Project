@@ -21,7 +21,7 @@ for line in sys.stdin:
 			flag_dic[(product_id, user_id)][1] = True
 		else:
 			flag_dic[(product_id, user_id)][0] = True
-	except ValueError:
+	except KeyError:
 		if event_type =='purchase':
 			flag_dic[(product_id, user_id)] = [False, False, True]
 		elif event_type =='cart':
