@@ -1,3 +1,8 @@
+# 处理第一列date time
+* 只用python处理就好了，不用mapreduce。
+* datetime_process_map.py
+* 方法是：在自己的目录下: cat 2019-Oct.csv | python datetime_process_map.py > new2019-Oct.csv
+
 # 建立HIVE数据库
 * 浦哥 “/user/pudu/” 这个Hadoop文件夹的权限我们没有，建立不了table
 * Hive_Code.sql
