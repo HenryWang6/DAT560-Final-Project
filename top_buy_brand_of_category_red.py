@@ -14,6 +14,7 @@ for line in sys.stdin:
 	elif event_type == 'purchase':
 		purchase_cnt += 1
 	else:
+		0
 
 	try:
 		dic[(category, brand)] = purchase_cnt *100.0 / view_cnt

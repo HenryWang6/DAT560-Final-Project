@@ -12,4 +12,4 @@ for line in sys.stdin:
 	if (event_type=='' or event_type is None) or (category=='' or category is None) or (brand=='' or brand is None):
 		continue
 	
-	print '%s\t%s\t%s' % (event_type, category, brand)
+	print '%s,%s,%s' % (event_type, category, brand)
