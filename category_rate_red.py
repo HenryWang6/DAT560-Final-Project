@@ -40,15 +40,18 @@ for each in category_set:
 		v_to_c = 0.0
 
 	try:
+		num_vp = category_view[each]-category_cart[each]
+		v_to_p = num_vp*100.0/category_view[each]
+	except KeyError:
+		num_vp = 0
+		v_to_p = 0.0
+
+	try:
+		num_cp = category_purchase[each] - num_vp
 		c_to_p = category_purchase[each]*100.0/category_cart[each]
 	except KeyError:
 		c_to_p = 0.0
 
-	try:
-		v_to_p = category_purchase[each]*100.0/category_view[each]
-	except KeyError:
-		v_to_p = 0.0
-	
 	print '%s,%s,%s,%s' % (each, v_to_c, c_to_p, v_to_p)
 
 
