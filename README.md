@@ -5,9 +5,9 @@
 * [Hive_Code.sql](https://github.com/HenryWang6/DAT560-Final-Project/blob/master/Hive_Code.sql)
 
 # Calculate trasfermation rate (view->cart->purchase or view->purchase) of different category
-* [category_rate_map.py]()
-* [category_rate_red.py]
-![avatar](https://github.com/HenryWang6/DAT560-Final-Project/blob/master/event_relation.jpeg)
+* [category_rate_map.py](https://github.com/HenryWang6/DAT560-Final-Project/blob/master/category_rate_map.py)
+* [category_rate_red.py](https://github.com/HenryWang6/DAT560-Final-Project/blob/master/category_rate_red.py)
+* ![avatar](https://github.com/HenryWang6/DAT560-Final-Project/blob/master/event_relation.jpeg)
 
 # Calculate successful purchase rate of different brand & category
 * [top_buy_brand_of_category_map.py](https://github.com/HenryWang6/DAT560-Final-Project/blob/master/top_buy_brand_of_category_map.py)
