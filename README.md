@@ -15,10 +15,10 @@
 * top_buy_brand_of_category_map.py
 * top_buy_brand_of_category_red.py
 
-# 购买成功发生的时间段 (画图，也许有规律)
-* Hive：
-* select event_time from estore where event_type = 'purchase'
-* select event_time from estore where event_type = 'view'
+# 购买成功发生的时间段 & 日期 (画图，也许有规律)
+* 输出：event_type, date, time
+* diff_type_time_map.py
+* diff_type_time_red.py
 
 # 没有经过 view -> cart -> purchase 链的产品。重复购买，日用型的商品？（洗衣液 etc。）
 * no_hesitate_product_map.py
