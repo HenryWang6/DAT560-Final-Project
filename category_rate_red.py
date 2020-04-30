@@ -30,9 +30,10 @@ for line in sys.stdin:
 			category_purchase[category] = 1
 		category_ls.append(category)
 
+category_set = set(category_ls)
 
 print 'category,view_to_cart_rate,cart_to_purchase_rate,view_to_purchase_rate'
-for each in category_ls:
+for each in category_set:
 	try:
 		v_to_c = category_cart[each]*100.0/category_view[each]
 	except KeyError:
